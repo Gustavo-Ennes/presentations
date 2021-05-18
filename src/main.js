@@ -4,6 +4,7 @@ import App from './App.vue'
 import Portfolio from './components/Portfolio'
 import Kratodo from './components/Kratodo'
 import Feriapp from './components/Feriapp'
+import Index from './components/Index'
 import { BootstrapVue } from 'bootstrap-vue';
 import Meta from 'vue-meta';
 
@@ -21,6 +22,7 @@ const routes = [
   {path:'/feriapp', component: Feriapp},
   {path:'/kratodo', component: Kratodo},
   {path:'/portfolio', component: Portfolio},
+  {path:'/', component: Index}
 ]
 
 const router = new VueRouter({routes})
