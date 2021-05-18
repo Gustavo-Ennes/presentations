@@ -55,7 +55,7 @@ export default {
   name: "Footer",
   methods:{
     addHoverListeners(){
-      const els = document.querySelectorAll('p')
+      const els = document.querySelectorAll('a p')
       els.forEach( el => {
 
         const prefix = "animate__"

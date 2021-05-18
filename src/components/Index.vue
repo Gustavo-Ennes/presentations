@@ -4,20 +4,18 @@
         <div class='main container-fluid'>
           <b-row align-h='around'>
             <b-col cols='12'>
-              <h1 class='display-2 mb-5 text-center'>Presentations</h1>
+              <h1 class='display-2 mb-5 text-center'>PRESENTATIONS</h1>
+            </b-col>
+            <b-col cols='12'>
+              <About />
             </b-col>
             <b-col cols='12'>
               <div class='projectsWrapper'>
                 <b-row align-h='center'>
                   <b-col cols='12' md='6' lg='4' xl='3' v-for='project in projects' :key='project._id'>
-                    <router-link to='/feriapp' class='projectWrapper'>
-                      <section class='projectWrapper'>
-                        <i class="fas fa-image text-light"> </i>
-                        <br/>
-                        <h1 class='text-center'> {{ project.title }}</h1>
-                        <p class='text-light'>{{ project.subTitle }}</p>
-                      </section>
-                    </router-link>
+
+                    <Presentation :project='project' />
+                   
                   </b-col>
                 </b-row>
               </div>
@@ -34,11 +32,15 @@
 <script>
 import axios from 'axios'
 import Footer from './Footer.vue'
+import Presentation from './Presentation.vue'
+import About from './About.vue'
 
 export default {
   name: "Index",
   components:{
-    Footer
+    Footer,
+    Presentation,
+    About
   },
   data(){
     return {
@@ -81,9 +83,7 @@ export default {
     },
     setHeight(){
       const height = window.screen.height + "px"
-      console.log({height})
       const d = document.querySelector('.main')
-      console.log(d);
       d.style.setProperty("min-height", height)
     }
   },
@@ -95,12 +95,10 @@ export default {
 }
 </script>
 
-<style scoped>
-a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-}
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -112,20 +110,13 @@ i{
   font-size: 28px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
-.projectWrapper{
-  background-color:rgba(255, 255, 255, 0.1);
-  height: 150px;
-  margin:15px;
-  padding:10px;
-
-}
-
 .projectsWrapper{
   margin-top: 100px;
 }
 
-.main{
+.main, .footer{
   margin-top:100px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 </style>

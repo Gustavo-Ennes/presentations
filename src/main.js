@@ -22,7 +22,7 @@ const routes = [
   {path:'/feriapp', component: Feriapp},
   {path:'/kratodo', component: Kratodo},
   {path:'/portfolio', component: Portfolio},
-  {path:'/', component: Index}
+  {path:'', component: Index}
 ]
 
 const router = new VueRouter({routes})
