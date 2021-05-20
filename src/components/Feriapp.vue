@@ -159,12 +159,41 @@
         that will enter in a vacation soon, the ones returning, and when. 
       </p>
     </b-col>
+    <b-col cols='12' class='text'>
+      <strong class='subtitle'>Technologies</strong>
+      <section class='mt-5'>
+        <b-row align-h='around'>
+          <b-col cols='4'>Python</b-col>
+          <b-col cols='4'>Django</b-col>
+          <b-col cols='4'>MongoDB</b-col>
+          <b-col cols='4'>Sass</b-col>
+          <b-col cols='4'>BeautifulSoup4</b-col>
+          <b-col cols='4'>ReportLab</b-col>
+          <b-col cols='4'>Cloud Functions</b-col>
+          <b-col cols='4'>Cloud scheduler </b-col>
+          <b-col cols='4'>App Engine</b-col>
+
+        </b-row>
+      </section>
+    </b-col>
+
+
+    <b-col cols='12'>
+      <i class="far fa-arrow-alt-circle-left text" @click='$router.push("/")'> Go back</i>
+    </b-col>
+    <b-col cols='12'>
+      <Footer />
+    </b-col>
   </b-row>
 </template>
 
 <script>
+import Footer from './Footer.vue'
 export default {
-  name: "Feriapp"
+  name: "Feriapp",
+  components:{
+    Footer
+  }
 }
 </script>
 

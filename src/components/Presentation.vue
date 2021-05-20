@@ -3,10 +3,10 @@
       <section class='projectWrapper'>
         <i class="fas fa-image text-light"> </i>
         <br/>
-        <h1 class='text-center'> {{ project.title }}</h1>
-        <p class='text-light'>{{ project.subTitle }}</p>
+        <h1 class='text-center'> {{ project }}</h1>
       </section>
     </router-link>
+    
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
   props: ['project'],
   methods: {
     defineWhere(){
-      return `/${this.project.name}`
+      return `/${this.project}`
     }
   }
 

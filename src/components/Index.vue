@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import Footer from './Footer.vue'
 import Presentation from './Presentation.vue'
 import About from './About.vue'
@@ -44,7 +43,7 @@ export default {
   },
   data(){
     return {
-      projects: null
+      projects: ['Feriapp', 'Kratodo', 'Portfolio', 'PortfolioAPI']
     }
   },
   methods: {
@@ -70,17 +69,6 @@ export default {
         console.log({err})
       }      
     },
-    async fetchProjects(){
-      try{
-        const res = await axios({
-          method: 'get',
-          url:'https://api.ennes.dev/portfolio/project'
-        })
-        this.projects = res.data.projects
-      }catch(err){
-        console.log({error: `Impossible fetch projects:\n${err}`})
-      }      
-    },
     setHeight(){
       const height = window.screen.height + "px"
       const d = document.querySelector('.main')
@@ -88,7 +76,6 @@ export default {
     }
   },
   async mounted(){
-    await this.fetchProjects()
     this.addHoverAnimation()
     this.setHeight()
   }
