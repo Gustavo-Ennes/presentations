@@ -84,15 +84,17 @@ export default {
 <style scoped>
 a{
   text-decoration: none;
-  color:green;
+  color: #ddd !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) !important;
 }
 a p:hover{
-  color:darkolivegreen !important;
+  color:#bbb !important;
+  cursor: pointer !important;
 }
 
 .label{
-  color:green;
-  text-shadow: 2px 2px 2px rgba(255, 255,255, 0.6);
+  color:#82bf46;
+  text-shadow: 2px 2px 2px rgba(0, 0,0, 0.4);
   margin-bottom:50px;
 }
 .footer{

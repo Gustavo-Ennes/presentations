@@ -103,8 +103,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #82bf46;
-  color: #F8C500;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3)
+  color: #f89500;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
 }
 i{
   font-size: 28px;
