@@ -204,7 +204,7 @@ export default {
   padding:10px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: rgba(255, 208, 0, 0.1);
+  background-color: rgba(53, 43, 1, 0.377);
   margin-left:2rem;
 }
 
