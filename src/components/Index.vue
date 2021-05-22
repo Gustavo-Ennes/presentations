@@ -43,7 +43,7 @@ export default {
   },
   data(){
     return {
-      projects: ['Feriapp', 'Kratodo', 'Portfolio', 'PortfolioAPI']
+      projects: ['Feriapp', 'Kratodo', 'Portfolio', 'Api']
     }
   },
   methods: {

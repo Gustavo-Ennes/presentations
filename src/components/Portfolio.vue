@@ -73,6 +73,8 @@
 
         <i class="far fa-arrow-alt-circle-left text" @click='$router.push("/")'> Go back</i>
 
+        
+
       </b-container>
     </b-col>
     <b-col cols='12'>
@@ -83,10 +85,14 @@
 
 <script>
 import Footer from './Footer.vue'
+import hl from 'highlight.js'
+
 export default {
   name: 'Portfolio',
   components:{
     Footer
+  },mounted(){
+    hl.highlightAll()
   }
 
 }

@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio'
 import Kratodo from './components/Kratodo'
 import Feriapp from './components/Feriapp'
 import Index from './components/Index'
+import Api from './components/Api'
 import { BootstrapVue } from 'bootstrap-vue';
 import Meta from 'vue-meta';
 
@@ -22,6 +23,7 @@ const routes = [
   {path:'/feriapp', component: Feriapp},
   {path:'/kratodo', component: Kratodo},
   {path:'/portfolio', component: Portfolio},
+  {path:'/api', component: Api},
   {path:'', component: Index}
 ]
 
