@@ -37,9 +37,10 @@
             by Kratodo Vue app with authentication.
           </p>
           
-          <pre class='prettyprint m-5'>
-            <code>
-              const ProjectSchema = new mongoose.Schema({
+          <pre>
+            <highlightjs autodetect code="         
+              const ProjectSchema = new mongoose.Schema(
+                {
                   name: {type: String, required: true, unique: true},
                   title: {type: String, required: true},
                   subTitle: String,
@@ -50,9 +51,9 @@
                   repo:String,    
                 },
                 {timestamps: true}
-              );
-
-            </code>
+              );" 
+            />
+              
           </pre>
 
 
@@ -64,46 +65,44 @@
             just in case; and another one to handle users authentication when manipulating their to-do's. 
           </p>
 
-
-          <pre class='prettyprint m-5'>
-            <code>
-              app.use('/', indexRouter)
-              app.use('/portfolio/', portfolioProjectsRouter)
-              app.use('/kratodo/', kratodoIndexRouter)
-              app.use('/kratodo/todos/',authMiddleware, kratodoTodosRouter)
-            </code>
+          <pre>
+            <highlightjs autodetect code="     
+                app.use('/', indexRouter);
+                app.use('/portfolio/', portfolioProjectsRouter);
+                app.use('/kratodo/', kratodoIndexRouter);
+                app.use('/kratodo/todos/',authMiddleware, kratodoTodosRouter);
+            " 
+            />
           </pre>
-
           <strong class='subtitle text my-5'> Routes </strong>
 
           <p class='text'>
             The /kratodo routes are for serving to-do specific methods, /portfolio routes are 
             project related and in the root just one route to send e-mails.
           </p>
+          <pre>
+            <highlightjs lang='javascript' code="
+              router
+                .get('/', async (req, res) => {
+                    res.send({message: 'Welcome to my API!'})
+                })
+                // parameter received in req.body.to must be a array of strings
+                .post('/send-mail/', async (req, res) => {   
 
-          <pre class='prettyprint m-5'>
-            <code>
-            router
-              .get("/", async (req, res) => {
-                  res.send({message: "Welcome to my API!"})
-              })
-              // parameter received in req.body.to must be a array of strings
-              .post("/send-mail/", async (req, res) => {   
-
-                  const to = req.body.to
-                  const from = req.body.from || null
-                  const html = getTemplate(req.body.html)
-                  const text = req.body.text
-                  const subject = req.body.subject
-                  
-                  try{
-                      let result = await sendMail(to, from, subject, html, text)
-                      res.send(result)
-                  }catch(err){
-                      console.log(err)
-                  }
-              })
-            </code>
+                    const to = req.body.to
+                    const from = req.body.from || null
+                    const html = getTemplate(req.body.html)
+                    const text = req.body.text
+                    const subject = req.body.subject
+                    
+                    try{
+                        let result = await sendMail(to, from, subject, html, text)
+                        res.send(result)
+                    }catch(err){
+                        console.log(err)
+                    }
+                })
+              " />
           </pre>
 
 
@@ -115,20 +114,15 @@
       <b-col cols='12'>
         <Footer />
       </b-col>
-
+      
   </b-row>    
 </template>
-
 <script>
-import Footer from './Footer.vue'
-export default {
-  name: "Api",
-  components: {
-    Footer,
+  import Footer from './Footer.vue'
+  export default {
+    name: "Api",
+    components: {
+      Footer,
+    },
   }
-}
 </script>
-
-<style scoped>
-@import "../assets/codeTheme.css";
-</style>

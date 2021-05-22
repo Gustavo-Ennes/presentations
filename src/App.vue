@@ -1,6 +1,14 @@
 <template>
-  <router-view id="app">   
-  </router-view>
+  <transition
+  mode="out-in"
+  enter-active-class="animate__animated animate__fadeIn"
+  leave-active-class="animate__animated animate__fadeOut"
+  >
+    <keep-alive>
+      <router-view id="app">   
+      </router-view>
+    </keep-alive>
+  </transition>
 </template>
 
 <script>
@@ -9,9 +17,3 @@ export default {
 }
 </script>
 
-<style scoped>
-  #app{
-    margin: 0px;
-    padding: 0px;
-  }
-</style>

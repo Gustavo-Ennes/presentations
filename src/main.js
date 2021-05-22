@@ -8,16 +8,21 @@ import Index from './components/Index'
 import Api from './components/Api'
 import { BootstrapVue } from 'bootstrap-vue';
 import Meta from 'vue-meta';
+import hljs from 'highlight.js'
+
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import './assets/main.css'
+import 'highlight.js/styles/dracula.css';
 
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(Meta)
+Vue.use(hljs.vuePlugin)
 
 const routes = [
   {path:'/feriapp', component: Feriapp},

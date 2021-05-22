@@ -184,35 +184,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.title{
-  text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);
-  margin-bottom: 50px;
-  padding:20px;
-}
-.text{
-  color:#ddd;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  padding:30px;
-  font-size: 30px !important;
-}
-
-.subtitle{
-  margin-top:30px;
-  margin-bottom: 55px;
-  padding:10px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: rgba(53, 43, 1, 0.377);
-  margin-left:2rem;
-}
-
-figure{
-  padding:20px;
-}
-img{
-  box-shadow:2px 2px 12px 4px rgba(0, 0, 0, 0.2);
-}
-
-</style>
