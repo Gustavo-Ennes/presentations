@@ -1,5 +1,6 @@
 <template>
-   <b-row align-h='center'>
+  <section class='indexWrapper notThree'>
+    <b-row align-h='center'>
       <b-col cols='12'>
         <div class='main container-fluid'>
           <b-row align-h='around'>
@@ -23,21 +24,17 @@
           </b-row>
         </div>
       </b-col>
-      <b-col cols='12'>
-        <Footer />
-      </b-col>
     </b-row>
+  </section>
 </template>
 
 <script>
-import Footer from './Footer.vue'
 import Presentation from './Presentation.vue'
 import About from './About.vue'
 
 export default {
   name: "Index",
   components:{
-    Footer,
     Presentation,
     About
   },
@@ -75,7 +72,7 @@ export default {
       d.style.setProperty("min-height", height)
     }
   },
-  async mounted(){
+  mounted(){
     this.addHoverAnimation()
     this.setHeight()
   }
@@ -93,9 +90,10 @@ i{
   margin-top: 100px;
 }
 
-.main, .footer{
+.main{
   margin-top:100px;
   font-family: 'Fjalla One', sans-serif;
 }
+
 
 </style>

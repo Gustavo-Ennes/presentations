@@ -114,20 +114,13 @@
 
       </b-container>
     </b-col>
-    <b-col cols='12'>
-      <Footer />
-    </b-col>
   </b-row>
 </template>
 
 <script>
-import Footer from './Footer.vue'
 
 export default {
   name: "Kratodo",
-  components:{
-    Footer
-  }
   
 }
 </script>

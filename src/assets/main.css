@@ -1,14 +1,32 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
+html, body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #82bf46;
+  /* background-color: #82bf46; */
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   margin: 0px;
   padding: 0px;
+}
+
+.colFooter{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.notThree{
+  position:relative !important;
+  z-index:2 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 h1{

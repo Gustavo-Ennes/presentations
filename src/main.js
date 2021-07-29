@@ -20,7 +20,7 @@ import 'highlight.js/styles/dracula.css';
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue) 
 Vue.use(Meta)
 Vue.use(hljs.vuePlugin)
 
