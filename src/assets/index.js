@@ -26,8 +26,8 @@ const mouseMoveListener = () => {
 
   const touchListener = (event) => {   
     const touch = event.touches[0]
-    coord.x = (touch.pageX / window.innerWidth) * 2 - 1;
-    coord.y = (touch.pageY / window.innerHeight) * 2 - 1;
+    coord.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    coord.y = (touch.clientY / window.innerHeight) * 2 - 1;
     scene.rotation.x += coord.y / 50
     scene.rotation.y += coord.x / 50  
   }

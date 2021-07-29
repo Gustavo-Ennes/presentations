@@ -153,6 +153,7 @@
           <strong class='subtitle text'>Technologies</strong>
           <section class='mt-5 text'>
             <b-row align-h='around'>
+              <b-col cols='4'>Three.js</b-col>
               <b-col cols='4'>Python</b-col>
               <b-col cols='4'>Django</b-col>
               <b-col cols='4'>MongoDB</b-col>

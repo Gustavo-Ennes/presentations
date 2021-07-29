@@ -105,6 +105,14 @@
               " />
           </pre>
 
+          <section class='mt-5 text'>
+            <b-row align-h='around' class='text-center'>
+              <b-col cols='4'>Node.js</b-col>
+              <b-col cols='4'>MongoDB</b-col>
+              <b-col cols='4'>Express.js</b-col>
+            </b-row>
+          </section>
+
 
           <i class="far fa-arrow-alt-circle-left text" @click='$router.push("/")'> Go back</i>
 

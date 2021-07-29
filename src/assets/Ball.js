@@ -8,7 +8,7 @@ export default class Ball{
   static BONDARIES = {
     x: {min: -125, max: 125},
     y: {min: -125, max: 125},
-    z: {min: -124, max: 124}
+    z: {min: -125, max: 125}
   }
   static MAX_BALLS = 30
 
@@ -104,6 +104,7 @@ export default class Ball{
       break;
     }
     tween.easing(TWEEN.Easing.Quadratic.InOut)
+    tween.onStart(()=>{this.movimentRoutine()})
     tween.start()
   }
 
@@ -114,7 +115,6 @@ export default class Ball{
   increaseRadius(){
     this.scale += 1 + Math.random() * .05
     const newScale = new THREE.Vector3(this.scale, this.scale, this.scale)
-    console.log(`increasing radius: scale===${this.scale}`)
     let t = new TWEEN.Tween(this.mesh.scale)
     .to(newScale, 200)
     .easing(TWEEN.Easing.Cubic.InOut)
