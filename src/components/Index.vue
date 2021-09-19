@@ -40,7 +40,7 @@ export default {
   },
   data(){
     return {
-      projects: ['feriapp', 'kratodo', 'portfolio', 'api']
+      projects: ['feriapp', 'kratodo', 'portfolio', 'api', 'imobiliaria']
     }
   },
   methods: {
