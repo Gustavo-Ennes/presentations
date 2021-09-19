@@ -6,6 +6,7 @@ import Kratodo from './components/Kratodo'
 import Feriapp from './components/Feriapp'
 import Index from './components/Index'
 import Api from './components/Api'
+import Imobiliaria from './components/Imobiliaria'
 import { BootstrapVue } from 'bootstrap-vue';
 import Meta from 'vue-meta';
 import hljs from 'highlight.js'
@@ -29,6 +30,7 @@ const routes = [
   {path:'/kratodo', component: Kratodo},
   {path:'/portfolio', component: Portfolio},
   {path:'/api', component: Api},
+  {path:'/imobiliaria', component: Imobiliaria},
   {path:'', component: Index}
 ]
 
