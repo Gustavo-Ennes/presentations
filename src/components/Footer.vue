@@ -10,16 +10,19 @@
                 <h4 class='label'>Projects</h4>
               </b-col>
               <b-col cols='6'>
-                <a href="https://feriapp.ennes.dev"><p>Feriapp</p></a>
+                <a target="_blank" href="https://feriapp.ennes.dev"><p>Feriapp</p></a>
               </b-col>
               <b-col cols='6'>
-                <a href="https://kratodo.ennes.dev"><p>Kratodo</p></a>
+                <a target="_blank" href="https://kratodo.ennes.dev"><p>Kratodo</p></a>
               </b-col>
               <b-col cols='6'>
-                <a href="https://ennes.dev"><p>Portfolio</p></a>
+                <a target="_blank" href="https://ennes.dev"><p>Portfolio</p></a>
               </b-col>
               <b-col cols='6'>
                 <a href="/"><p>Presentations<small>(this page)</small></p></a>
+              </b-col>
+              <b-col cols='6'>
+                <a target="_blank" href="/https://github.com/Gustavo-Ennes/imobiliaria"><p>Imobiliária</p></a>
               </b-col>
             </b-row>
           </div>
@@ -35,15 +38,19 @@
             </b-col>
             
             <b-col cols='12'>
-              <a href="https://ennes.dev"><p>My site</p></a>
+              <a target="_blank" href="https://ennes.dev"><p>My site</p></a>
             </b-col>
 
             <b-col cols='12'>
-              <a href="https://github.com/Gustavo-Ennes"><p>Github</p></a>
+              <a target="_blank" href="https://github.com/Gustavo-Ennes"><p>Github</p></a>
             </b-col>
 
             <b-col cols='12'>
-              <a href="https://www.linkedin.com/in/gustavo-ennes/"><p>LinkedIn</p></a>
+              <a target="_blank" href="https://www.linkedin.com/in/gustavo-ennes/"><p>LinkedIn</p></a>
+            </b-col>
+
+            <b-col cols='12'>
+              <a target="_blank" href="https://www.t.me/gustavo_ennes/"><p>Telegram</p></a>
             </b-col>
           </b-row>
         </div>
