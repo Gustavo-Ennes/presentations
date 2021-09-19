@@ -22,7 +22,7 @@
                 <a href="/"><p>Presentations<small>(this page)</small></p></a>
               </b-col>
               <b-col cols='6'>
-                <a target="_blank" href="/https://github.com/Gustavo-Ennes/imobiliaria"><p>Imobiliária</p></a>
+                <a target="_blank" href="https://github.com/Gustavo-Ennes/imobiliaria"><p>Imobiliária</p></a>
               </b-col>
             </b-row>
           </div>
