@@ -153,16 +153,16 @@
           <strong class='subtitle text'>Technologies</strong>
           <section class='mt-5 text'>
             <b-row align-h='around'>
-              <b-col cols='4'>Three.js</b-col>
-              <b-col cols='4'>Python</b-col>
-              <b-col cols='4'>Django</b-col>
-              <b-col cols='4'>MongoDB</b-col>
-              <b-col cols='4'>Sass</b-col>
-              <b-col cols='4'>BeautifulSoup4</b-col>
-              <b-col cols='4'>ReportLab</b-col>
-              <b-col cols='4'>Cloud Functions</b-col>
-              <b-col cols='4'>Cloud scheduler </b-col>
-              <b-col cols='4'>App Engine</b-col>
+              <b-col cols='4'><span class='tech'>Three.js</span></b-col>
+              <b-col cols='4'><span class='tech'>Python</span></b-col>
+              <b-col cols='4'><span class='tech'>Django</span></b-col>
+              <b-col cols='4'><span class='tech'>MongoDB</span></b-col>
+              <b-col cols='4'><span class='tech'>Sass</span></b-col>
+              <b-col cols='4'><span class='tech'>BeautifulSoup4</span></b-col>
+              <b-col cols='4'><span class='tech'>ReportLab</span></b-col>
+              <b-col cols='4'><span class='tech'>Cloud Functions</span></b-col>
+              <b-col cols='4'><span class='tech'>Cloud scheduler</span></b-col>
+              <b-col cols='4'><span class='tech'>App Engine</span></b-col>
             </b-row>
           </section>
 

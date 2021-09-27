@@ -103,14 +103,14 @@
 
         <section class='mt-5 text'>
           <b-row align-h='around' class='text-center'>
-            <b-col cols='4'>Node.js</b-col>
-            <b-col cols='4'>MongoDB</b-col>
-            <b-col cols='4'>GraphQL</b-col>
-            <b-col cols='4'>Express.js</b-col>
-            <b-col cols='4'>express-graphQL</b-col>
-            <b-col cols='4'>Quasar</b-col>
-            <b-col cols='4'>Vue</b-col>
-            <b-col cols='4'>Mocha ~ Chai</b-col>
+            <b-col cols='4'><span class='tech'>Node.js</span></b-col>
+            <b-col cols='4'><span class='tech'>MongoDB</span></b-col>
+            <b-col cols='4'><span class='tech'>GraphQL</span></b-col>
+            <b-col cols='4'><span class='tech'>Express.js</span></b-col>
+            <b-col cols='4'><span class='tech'>express-graphQL</span></b-col>
+            <b-col cols='4'><span class='tech'>Quasar</span></b-col>
+            <b-col cols='4'><span class='tech'>Vue</span></b-col>
+            <b-col cols='4'><span class='tech'>Mocha ~ Chai</span></b-col>
           </b-row>
         </section>
 

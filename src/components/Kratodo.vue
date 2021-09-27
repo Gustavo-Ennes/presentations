@@ -100,12 +100,12 @@
         <strong class='subtitle text'>Technologies</strong>
         <section class='mt-5 text'>
           <b-row align-h='around'>
-            <b-col cols='4'>Node</b-col>
-            <b-col cols='4'>Vue</b-col>
-            <b-col cols='4'>MongoDB</b-col>
-            <b-col cols='4'>Sass</b-col>
-            <b-col cols='4'>Bootstrap</b-col>
-            <b-col cols='4'>Animate.css</b-col>
+            <b-col cols='4'><span class='tech'>Node</span></b-col>
+            <b-col cols='4'><span class='tech'>Vue</span></b-col>
+            <b-col cols='4'><span class='tech'>MongoDB</span></b-col>
+            <b-col cols='4'><span class='tech'>Sass</span></b-col>
+            <b-col cols='4'><span class='tech'>Bootstrap</span></b-col>
+            <b-col cols='4'><span class='tech'>Animate.css</span></b-col>
           </b-row>
         </section>
 
