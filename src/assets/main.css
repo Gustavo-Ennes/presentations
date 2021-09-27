@@ -100,13 +100,13 @@ img{
 @media only screen and (min-width: 768px) {
 
   .title{
-    font-size: 23vw !important;
+    font-size: 18vw !important;
   }
   .text{
-    font-size: 6vw !important;
+    font-size: 3vw !important;
   }
   .subtitle{
-    font-size: 7vw !important;
+    font-size: 4vw !important;
   }
 
 }
@@ -114,13 +114,13 @@ img{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .title{
-    font-size: 20vw !important;
+    font-size: 16vw !important;
   }
   .text{
-    font-size: 4vw !important;
+    font-size: 2.4vw !important;
   }
   .subtitle{
-    font-size: 4.2vw !important;
+    font-size: 3.5vw !important;
   }
 }
 
@@ -130,9 +130,9 @@ img{
     font-size: 12vw !important;
   }
   .text{
-    font-size: 3.4vw !important;
+    font-size: 2vw !important;
   }
   .subtitle{
-    font-size: 3.1vw !important;
+    font-size: 3vw !important;
   }
 }
